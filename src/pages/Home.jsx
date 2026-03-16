@@ -1,9 +1,6 @@
 import { Link } from 'react-router-dom'
-import broImg from '../bilder/bro.jpg'
-import slendaImg from '../bilder/slenda.jpg'
-import adventstakeImg from '../bilder/adventstake3.jpg'
+import FeaturedProducts from '../components/FeaturedProducts'
 import '../styles/hero.css'
-import '../styles/featured-products.css'
 import '../styles/info.css'
 
 function Home() {
@@ -21,31 +18,7 @@ function Home() {
 
       <div className="divider"></div>
 
-      <section className="featured-products">
-        <h2>Utvalda Produkter</h2>
-        <div className="products-grid">
-          <div className="product-card">
-            <img src={broImg} alt="Servettställ - Högakustenbron" />
-            <h3>Servettställ - Högakustenbron</h3>
-            <p className="price">300,00kr</p>
-            <Link to="/produkter/servettstall-hogakustenbron" className="product-button">
-              Till produkten
-            </Link>
-          </div>
-          <div className="product-card">
-            <img src={slendaImg} alt="Ljuslykta Slända" />
-            <h3>Ljuslykta - Sländan</h3>
-            <p className="price">300,00kr</p>
-            <Link to="#" className="product-button">Till produkten</Link>
-          </div>
-          <div className="product-card">
-            <img src={adventstakeImg} alt="Adventstake - Vågen" />
-            <h3>Adventstake - Vågen</h3>
-            <p className="price">340,00kr</p>
-            <Link to="#" className="product-button">Till produkten</Link>
-          </div>
-        </div>
-      </section>
+      <FeaturedProducts />
 
       <div className="divider"></div>
 
