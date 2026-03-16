@@ -1,0 +1,70 @@
+.about-content {
+	padding: 3rem 2rem;
+	background-color: var(--color-dark);
+}
+
+.about-content h1 {
+	font-size: 3rem;
+	color: var(--color-light);
+	max-width: 1600px;
+	margin: 0 auto 2rem;
+}
+
+.about-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.about-text p {
+	font-size: 1.3rem;
+	color: var(--color-light);
+	line-height: 1.8;
+	margin-bottom: 1.5rem;
+}
+
+.about-signature {
+	margin-top: 2rem;
+	font-style: italic;
+	color: var(--color-gold-hover);
+}
+
+.about-values {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.about-value {
+	padding: 1.5rem;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(232, 228, 221, 0.1);
+	border-radius: 8px;
+}
+
+.about-value h3 {
+	font-size: 1.3rem;
+	color: var(--color-gold-hover);
+	margin-bottom: 0.5rem;
+}
+
+.about-value p {
+	font-size: 1.1rem;
+	color: var(--color-light);
+	line-height: 1.6;
+}
+
+/* Mobil */
+
+@media (max-width: 1040px) {
+	.about-content h1 {
+		font-size: 2rem;
+	}
+
+	.about-container {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+}

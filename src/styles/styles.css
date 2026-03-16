@@ -1,0 +1,90 @@
+:root {
+	--color-light: #e8e4dd;
+	--color-dark: #2c2c2c;
+	--color-divider: #8b4513;
+	--color-gold: #b8860b;
+	--color-gold-hover: #d4a373;
+	--color-muted: #ccc;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Fira Sans", sans-serif;
+	background-color: var(--color-dark);
+}
+
+.divider {
+	width: 100%;
+	height: 16px;
+	background-color: var(--color-divider);
+}
+
+@media print {
+	header,
+	footer,
+	.breadcrumb,
+	.divider,
+	.contact-form,
+	.contact-map,
+	.shop-controls,
+	.product-button,
+	.main-btn,
+	.outline-btn,
+	.submit-button {
+		display: none;
+	}
+
+	body {
+		background: white;
+		color: black;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	p,
+	span,
+	a,
+	li,
+	label {
+		color: black !important;
+	}
+
+	section,
+	.contact,
+	.shop-products,
+	.about-content,
+	.product-detail {
+		background: white !important;
+		background-image: none !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	section::before {
+		display: none;
+	}
+
+	.product-card,
+	.contact-detail,
+	.about-value {
+		background: white !important;
+		background-image: none !important;
+		border: 1px solid #ccc;
+	}
+
+	.product-card img,
+	.product-image-wrapper img {
+		box-shadow: none;
+	}
+
+	.product-image-wrapper {
+		position: static;
+	}
+}

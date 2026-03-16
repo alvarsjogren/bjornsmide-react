@@ -1,0 +1,152 @@
+.product-detail {
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 4rem 6rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+	align-items: start;
+}
+
+.product-image-wrapper {
+	position: sticky;
+	top: 2rem;
+}
+
+.product-image-wrapper img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.product-info h1 {
+	font-size: 3rem;
+	color: var(--color-light);
+	margin-bottom: 1rem;
+}
+
+.product-price {
+	font-size: 2rem;
+	color: var(--color-gold);
+	font-weight: 600;
+	margin-bottom: 2rem;
+}
+
+.product-description {
+	color: var(--color-light);
+	font-size: 1.2rem;
+	line-height: 1.8;
+	margin-bottom: 2rem;
+}
+
+.product-description p {
+	margin-bottom: 1.5rem;
+}
+
+.product-features {
+	margin-bottom: 2rem;
+}
+
+.product-features h3 {
+	font-size: 1.5rem;
+	color: var(--color-light);
+	margin-bottom: 1rem;
+}
+
+.product-features ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.product-features ul li {
+	color: var(--color-light);
+	font-size: 1.1rem;
+	margin-bottom: 0.75rem;
+	padding-left: 2rem;
+	position: relative;
+}
+
+.product-features ul li::before {
+	content: "\2713";
+	position: absolute;
+	left: 0;
+	color: var(--color-gold);
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+.product-buttons {
+	display: flex;
+	gap: 1rem;
+	margin-top: 2rem;
+}
+
+.product-buttons .main-btn {
+	display: inline-block;
+	padding: 1rem 2rem;
+	background-color: var(--color-gold);
+	color: var(--color-dark);
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: 600;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
+	text-align: center;
+}
+
+.product-buttons .main-btn:hover {
+	background-color: var(--color-gold-hover);
+}
+
+.outline-btn {
+	display: inline-block;
+	padding: 1rem 2rem;
+	background-color: transparent;
+	color: var(--color-light);
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: 600;
+	border: 2px solid var(--color-light);
+	border-radius: 4px;
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease;
+	text-align: center;
+}
+
+.outline-btn:hover {
+	background-color: var(--color-light);
+	color: var(--color-dark);
+}
+
+/* Mobil */
+
+@media (max-width: 1040px) {
+	.product-detail {
+		grid-template-columns: 1fr;
+		padding: 1.5rem 1rem;
+		gap: 2rem;
+	}
+
+	.product-image-wrapper {
+		position: static;
+	}
+
+	.product-info h1 {
+		font-size: 2rem;
+	}
+
+	.product-price {
+		font-size: 1.5rem;
+	}
+
+	.product-buttons {
+		flex-direction: column;
+	}
+
+	.product-buttons .main-btn,
+	.product-buttons .outline-btn {
+		text-align: center;
+	}
+}

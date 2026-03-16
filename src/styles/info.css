@@ -1,0 +1,58 @@
+.info {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 600px;
+	background-image: url("../bilder/cool-bg.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	color: var(--color-light);
+	text-align: center;
+}
+
+.info::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.65);
+	z-index: 1;
+}
+
+.info h1,
+.info p,
+.info .main-btn {
+	position: relative;
+	z-index: 2;
+}
+
+.info h1 {
+	font-size: 4rem;
+}
+
+.info p {
+	max-width: 800px;
+	font-size: 2rem;
+}
+
+/* Mobil */
+
+@media (max-width: 1040px) {
+	.info {
+		min-height: 350px;
+		padding: 2rem 2rem;
+	}
+
+	.info h1 {
+		font-size: 2.2rem;
+	}
+
+	.info p {
+		font-size: 1.2rem;
+	}
+}

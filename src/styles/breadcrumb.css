@@ -1,0 +1,56 @@
+.breadcrumb {
+	padding: 1rem 0;
+	background-color: var(--color-background);
+}
+
+.breadcrumb ol {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	list-style: none;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 6rem;
+}
+
+.breadcrumb ol li {
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+	color: var(--color-muted);
+}
+
+.breadcrumb ol li:not(:last-child)::after {
+	content: "\203A";
+	margin-left: 0.5rem;
+	color: var(--color-muted);
+	font-size: 1.6rem;
+}
+
+.breadcrumb ol li a {
+	color: var(--color-light);
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.breadcrumb ol li a:hover {
+	color: var(--color-accent);
+	text-decoration: underline;
+}
+
+.breadcrumb ol li[aria-current="page"] {
+	color: var(--color-gold-hover);
+	font-weight: 500;
+}
+
+/* Mobil */
+
+@media (max-width: 1040px) {
+	.breadcrumb ol {
+		padding: 0 1rem;
+	}
+
+	.breadcrumb ol li {
+		font-size: 1rem;
+	}
+}
