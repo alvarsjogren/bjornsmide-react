@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
+import Products from './pages/Products'
 import './styles/styles.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <div className="divider"></div>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/produkter" element={<Products />} />
       </Routes>
       <div className="divider"></div>
       <Footer />
