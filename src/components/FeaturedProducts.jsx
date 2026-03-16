@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import ProductCard from './ProductCard'
 import broImg from '../bilder/bro.jpg'
 import slendaImg from '../bilder/slenda.jpg'
 import adventstakeImg from '../bilder/adventstake3.jpg'
@@ -36,14 +36,14 @@ function FeaturedProducts() {
       <h2>Utvalda Produkter</h2>
       <div className="products-grid">
         {randomizedProducts.map((product) => (
-          <div className="product-card" key={product.name}>
-            <img src={product.image} alt={product.alt} />
-            <h3>{product.name}</h3>
-            <p className="price">{product.price}</p>
-            <Link to={product.link} className="product-button">
-              Till produkten
-            </Link>
-          </div>
+          <ProductCard
+            key={product.name}
+            name={product.name}
+            price={product.price}
+            image={product.image}
+            alt={product.alt}
+            link={product.link}
+          />
         ))}
       </div>
     </section>
