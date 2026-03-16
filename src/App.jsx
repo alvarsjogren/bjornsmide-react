@@ -1,10 +1,17 @@
-import './App.css'
+import { BrowserRouter } from 'react-router-dom'
+import Header from './components/Header'
+import './styles/styles.css'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <>
-      <h1>bjornsmide-react</h1>
-    </>
+    <BrowserRouter>
+      <Header />
+      <div className="divider"></div>
+      
+      <div className="divider"></div>
+      <Footer />
+    </BrowserRouter>
   )
 }
 
