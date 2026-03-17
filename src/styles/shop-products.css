@@ -75,6 +75,10 @@
 	margin: 0 auto;
 }
 
+.shop-products .product-card {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
 .shop-tagline {
 	margin-top: 4rem;
 	text-align: center;
