@@ -84,6 +84,8 @@
 
 .product-buttons .main-btn {
 	display: inline-block;
+	flex: 1;
+	margin-top: 0;
 	padding: 1rem 2rem;
 	background-color: var(--color-gold);
 	color: var(--color-dark);
@@ -101,6 +103,7 @@
 
 .outline-btn {
 	display: inline-block;
+	flex: 1;
 	padding: 1rem 2rem;
 	background-color: transparent;
 	color: var(--color-light);
