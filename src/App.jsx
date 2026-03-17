@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Products from './pages/Products'
 import ProductDetail from './pages/ProductDetail'
+import Contact from './pages/Contact'
 import './styles/styles.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/produkter" element={<Products />} />
         <Route path="/produkter/servettstall-hogakustenbron" element={<ProductDetail />} />
+        <Route path="/kontakt" element={<Contact />} />
       </Routes>
       <div className="divider"></div>
       <Footer />
