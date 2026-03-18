@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import '../styles/breadcrumb.css'
 
+// Uses a list of breadcrumbs where "Hem" is always shown first
+// Takes the current sites label as a prop.
 function Breadcrumb({ crumbs }) {
   return (
     <nav className="breadcrumb">

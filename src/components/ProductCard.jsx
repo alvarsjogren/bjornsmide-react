@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 
+// Product card to display the info. Takes product info as prop.
 function ProductCard({ name, price, image, alt, link }) {
   return (
     <div className="product-card">

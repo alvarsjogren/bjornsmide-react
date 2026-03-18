@@ -9,6 +9,8 @@ import About from './pages/About'
 import IronPage from './pages/IronPage'
 import './styles/styles.css'
 
+// Change the site depending on what content to serve
+// with the header and footer in between.
 function App() {
   return (
     <BrowserRouter>

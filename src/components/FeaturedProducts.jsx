@@ -4,6 +4,8 @@ import slendaImg from '../bilder/slenda.jpg'
 import adventstakeImg from '../bilder/adventstake3.jpg'
 import '../styles/featured-products.css'
 
+// Array of products to show.
+// Name should be unique since React uses it as a key
 const products = [
   {
     name: 'Servettställ - Högakustenbron',
@@ -28,6 +30,9 @@ const products = [
   },
 ]
 
+// Randomises the order of the products to show.
+// Copies the original array to not mess with the order.
+// Uses the product card component.
 function FeaturedProducts() {
   const randomizedProducts = [...products].sort(() => Math.random() - 0.5)
 

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/header.css'
 
+// Header with a mobile friendly hamburger bar using states.
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
